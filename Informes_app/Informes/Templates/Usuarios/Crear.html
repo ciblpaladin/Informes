@@ -1,0 +1,53 @@
+{% extends "main.html" %}
+
+{% block content %}
+
+
+<div class="card" style="border: none;">
+
+    <div class="card-header" style="background-color:#FF8400;">
+
+    </div>
+
+    <div class="card-body">
+       
+        <form action="crear" method="post">
+
+            {% csrf_token %}
+        
+            <div class="row ">
+                
+                <div class="col-sm-12 col-lg-6 form-inline-per">
+                    <span class="icono"><i class="bi bi-person-circle" ></i></span>
+                    <input type="text" id="" name="nombre_usuario" class="form-per" placeholder="Nombre" required>
+                </div>
+
+                <div class="col-sm-12 col-lg-6 form-inline-per">
+                    <span class="icono"><i class="bi bi-person-circle" ></i></span>
+                    <input type="text" id="" name="apellido_usuario" class="form-per" placeholder="Apellido" required>
+                </div>
+
+            </div> 
+            
+            <div class="row ">
+                
+                <div class="col-sm-12 col-lg-6 form-inline-per">
+                    <span class="icono"><i class="bi bi-person-circle" ></i></span>
+                    <input type="text" id="cedula_usuario" name="cedula_usuario" class="" placeholder="cedula" required>
+                </div>
+
+                <div class="col-sm-12 col-lg-6">
+                    
+                    <input type="text" id="celular_usuario" name="celular_usuario" class="" placeholder="celular" required>
+                </div>
+
+            </div> 
+        
+        
+        
+            <button type="submit" class="btn btn-primary">guardar</button>
+        </form>
+    </div>
+</div>
+
+{% endblock %}

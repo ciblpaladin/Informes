@@ -1,0 +1,11 @@
+{% extends "main.html" %}
+
+{% block content %}
+<div class="jumbotron">
+    <ul>
+        {% for us in usuarios%}
+        <li>{{ us.nombre_usuario}}</li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}

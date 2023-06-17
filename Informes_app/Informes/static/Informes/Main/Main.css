@@ -1,0 +1,153 @@
+.form-control:focus {
+    outline: none;
+    box-shadow: none;
+  }
+body, html {
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+}
+
+
+
+.container-fluid{
+    height: 5vh;
+    padding: 0;
+}
+.izquierda{
+
+    background-color: #f0eded;
+}
+
+.derecha{
+
+    background-color: #f0eded;
+}
+
+ /* =======BARRA NAVEGACION========= */
+.navegacion{
+
+    background-color: #00276c;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    
+}
+.icono, .titulo-informe{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.material-symbols-outlined {
+    
+    height: 80%;
+    width: 80%;
+    color: rgb(255, 255, 255); 
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+  
+}
+
+.titulo-informe h6 {
+
+    margin: 0;
+    font-size: 100%;
+    color: white;
+    font-family: sans-serif;
+}
+
+.boton-desplegable{
+
+    color: white;
+}
+.prueba{
+
+    height: 100%;
+}
+.navegacion ul{
+
+    list-style:none;
+}
+
+.navegacion-informe {
+
+    color: white;
+    text-decoration: none;
+}
+
+.main-contenedor{
+
+    
+    height: 75vh;
+}
+.height-main{
+
+    height: 100%;
+}
+.main{
+
+    height: 100%;
+    background-color: #96b3ff;
+}
+
+.fot{
+
+    background-color: #00276c;
+    height: 25vh;
+}
+
+/* Template hijos */
+.form-per{
+
+    
+    border: none;
+    outline: none;
+    border-bottom: 1px solid gray;
+    transition: border-color 0.6s, box-shadow 0.3s;
+    width: 100%;
+    height: calc(1.5em + 0.75rem + 2px);
+    border-radius: 0.5;
+    margin-left: 3%;
+    
+}
+/* #form-per:focus{
+
+    border-bottom: 2.5px solid #FF8400;
+} */
+#labels-per{
+
+    font-family: sans-serif;
+}
+
+.form-inline-per {
+    display: flex;
+    align-items: center;
+  }
+  
+  .form-inline-per span {
+    display: inline-block;
+    margin-right: 5px; /* Ajusta el espaciado entre el ícono y el input */
+  }
+  
+  .form-per:focus + .icono{
+    color: blue; /* Color del ícono cuando el input está en foco */
+    background-color: aquamarine;
+  }
+  
+  .form-per:focus {
+    border-bottom: 2.5px solid #FF8400 /* Color del texto del input cuando está en foco */
+  }
+.icono{
+
+    color: #FF8400;
+}  
+
+ 
+
+
+
